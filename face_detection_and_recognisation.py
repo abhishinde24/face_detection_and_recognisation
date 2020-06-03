@@ -66,6 +66,7 @@ while True:
         # temp=imgaGray.copy()
         # name=face_reconginasation(temp[y:y+h,x:x+w])
         cv2.rectangle(imga,(x,y),(x+w,y+h),(255,0,0),2)
+        ###################calling face-recognisation function defined above################################
         cv2.putText(imga,face_reconginasation(imgaGray[y:y+h,x:x+w]),
                          (x-10,y-10),cv2.FONT_HERSHEY_COMPLEX,0.6,(0,255,255),1)
 
